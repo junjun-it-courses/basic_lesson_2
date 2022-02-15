@@ -1,0 +1,162 @@
+<!--
+    <input> - тег который мы вкладываем внутрь тега <form>, с помощью него мы будем
+    создавать интерактивные поля для ввода информации пользователем. Также имеет
+    много атрибутов позволяющих настроить его внешний вид, поведение и работу.
+-->
+
+<input type="text">                             <br>
+<input type="number">                           <br>
+<input type="email">                            <br>
+<input type="tel">                              <br>
+<input type="checkbox">                         <br>
+<input type="radio">                            <br>
+<input type="button" value="Submit">            <br>
+<input type="submit" value="Submit">            <br>
+<input type="color">                            <br>
+<input type="date">                             <br>
+<input type="time">                             <br>
+<input type="file">                             <br>
+<input type="hidden">                           <br>
+<input type="password">                         <br>
+<input type="range">                            <br>
+<input type="url">                              <br>
+
+
+<!--
+    Это основные типы тега <input>, в зависимости от типа тега он может принимать какие-то
+    атрибуты или не принимать их, об этом лучше читать в документации.
+
+    Рассмотрим несколько атрибутов на примере стандартного input для ввода текста.
+-->
+
+<input type="text" value="Some text here">
+
+<!-- value - позволяет нам определить или предопределить значение тега input -->
+
+
+<input type="text" placeholder="First name">
+
+<!--
+    placeholder - определяет текст, который будет показа пользователь внутри input до
+    того момента пока пользователь не начнет вводить свое значение. Доступен не всем типам
+    input.
+ -->
+
+
+<input type="text" required>
+
+<!--
+    required - определяет, будет ли обязательным этот input в рамках текущего тега <form>.
+-->
+
+<input type="text" disabled>
+
+<!--
+    disabled - определяет, будет ли у пользователя возможность редактировать содержимое
+    input
+-->
+
+
+<input type="text" pattern="">
+
+<!--
+    pattern - в качестве значения принимает регулярное выражение которые будет проверять
+    правильность введенных данных.
+-->
+
+
+<input type="text" name="first_name">
+
+<!--
+    name - задает имя для нашего input
+-->
+
+
+<form id="form_id"></form>
+<input type="text" form="form_id">
+
+<!-- form - позволяет связать input с тегом form, input лежит вне тега form -->
+
+
+<!--
+    Атрибутов <input> существует огромное количество, мы рассмотрели только самые
+    распространенные.
+ -->
+
+<hr>
+
+<h2>Callback form</h2>
+
+<form action="https://some-server-url.com/send-email"
+      method="get"
+      target="_blank">
+
+  <div>
+    <input type="text" placeholder="First name">
+  </div>
+
+  <div>
+    <input type="text" placeholder="Last name">
+  </div>
+
+  <input type="submit">
+</form>
+
+<hr>
+
+<!-- Label -->
+
+<!--
+    Это тег позволяющий указывать подпись для элемента, обычно используется вместе с
+    тегом input. input и label можно связать с помощью id для input и for для label.
+-->
+
+<form action="">
+  <h2>Contact form #1</h2>
+  <div>
+    <label for="first_name">First name:</label>
+    <input id="first_name" type="text" placeholder="First name">
+  </div>
+
+</form>
+
+<hr>
+
+<!--
+    Также мы можем положить внутрь <label> тег <input> в таком случае они свяжутся
+    автоматически и нам не нужно указывать атрибуты for и id.
+-->
+
+<form action="">
+  <h2>Contact form #2</h2>
+  <div>
+    <label>
+      <span>First name</span>
+      <input type="text" placeholder="First name">
+    </label>
+  </div>
+</form>
+
+<!-- Пример -->
+
+<hr>
+
+<form action="">
+  <h2>Contact form #3</h2>
+  <div>
+    <label for="user_name">First name:</label>
+    <input id="user_name" type="text" placeholder="User name">
+  </div>
+
+  <div>
+    <label>
+      <span>User surname:</span>
+      <input type="text" placeholder="User surname">
+    </label>
+  </div>
+
+  <div>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset from">
+  </div>
+</form>

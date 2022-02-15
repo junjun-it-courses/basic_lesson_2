@@ -1,0 +1,114 @@
+<!--
+    В современной верстке выделяется 2 типа элементов:
+
+     • Блочные  (block level) - в основном, отвечают за каркас страницы.
+     • Строчные (inline level) - в основном, помогающие нам при стилизации страницы и тд.
+ -->
+
+
+<!-- Блочные элементы -->
+
+<!--
+    Они занимают всю доступную ширину родителя в которого вложены, из-за чего выталкивают
+    соседствующие элементы не могут располагаться с ними на одной строке и переносятся под них.
+ -->
+
+<div class="block">Block Element #1</div>
+<div class="block">Block Element #2</div>
+<div class="block">Block Element #3</div>
+
+<!-- Основные блочные элементы -->
+
+<div>div element</div>
+<p>p element</p>
+
+<hr>
+
+<!-- Списочные теги -->
+
+<ul>
+    <li>Lorem ipsum.</li>
+    <li>Similique, voluptas?</li>
+    <li>Enim, et!</li>
+</ul>
+
+<ol>
+    <li>Lorem ipsum.</li>
+    <li>Beatae, fugit?</li>
+    <li>Id, molestiae.</li>
+</ol>
+
+<dl>
+    <dt>Lorem</dt>
+    <dd>Lorem ipsum dolor sit.</dd>
+
+    <dt>Lorem ipsum.</dt>
+    <dd>Lorem ipsum dolor sit.</dd>
+</dl>
+
+<hr>
+
+<!-- Теги заголовков -->
+
+<h1>Lorem ipsum.</h1>
+<h2>Lorem ipsum.</h2>
+<h3>Lorem ipsum.</h3>
+<h4>Lorem ipsum.</h4>
+<h5>Lorem ipsum.</h5>
+<h6>Lorem ipsum.</h6>
+
+<!--
+    Вкладывая одни блочные элементы в другие мы получаем возможность создавать более сложную
+    верстку.
+-->
+
+<div class="post">
+    <div class="post-title">
+        <h2>Hello world</h2>
+    </div>
+
+    <div class="post-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ducimus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ducimus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ducimus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ducimus.</p>
+    </div>
+</div>
+
+<hr>
+
+<!--
+    Из примера выше видно, что в div c классом post вложенные другие элементы. На самом
+    деле, вложенность может достигать любого уровня, но не стоит сильно увлекаться
+    так как чем больше будет вложенность тем сложнее будет браузеру и компьютеру это все
+    обрабатывать.
+ -->
+
+<!-- Как делать нельзя? -->
+
+<!-- Нельзя вкладывать теги <p> друг в друга -->
+
+<p>
+    Lorem ipsum dolor sit amet.
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</p>
+
+<!-- Нельзя вкладывать заголовки друг в друга -->
+
+<h2>
+    Some title
+    <h3>Some subtitle</h3>
+    <h3>Some another subtitle</h3>
+</h2>
+
+
+<!--
+    ВАЖНО!
+
+    Сами по себе элементы не являются ни блочными ни строчными, а также не имеют никаких
+    стилей сами по себе. HTML - это все лишь разметка. Для всех тегов существуют стандартные
+    стили которые по-умолчанию настроены в браузере. За стилизацию элементом всегда отвечает
+    язык CSS который и будет определять то блочный элемент или строчный, а также множество
+    других стилей.
+-->

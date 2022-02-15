@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<main>
+
+    <form action="" class="form">
+        <h2>Форма регистрации пользователя</h2>
+
+        <fieldset>
+            <legend>Информация о пользователе</legend>
+
+            <div>
+                <label for="first_name">Имя:</label>
+                <input type="text" id="first_name" placeholder="Ваше имя">
+            </div>
+
+            <div>
+                <label for="last_name">Фамилия:</label>
+                <input type="text" id="last_name" placeholder="Ваша фамилия">
+            </div>
+
+
+            <div>
+                <label for="gender">Ваш пол</label>
+                <input type="text" placeholder="Введите ваш пол" list="gender_list" id="gender">
+                <datalist id="gender_list">
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+                    <option value="Другой">Другой</option>
+                </datalist>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Пароль и логин</legend>
+
+            <div>
+                <label for="login">Email</label>
+                <input type="email" id="login" placeholder="Введите ваш email">
+            </div>
+
+            <div>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" placeholder="Введите ваш пароль">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Другая информация</legend>
+
+            <div>
+                <label for="music_taste">Любимый музыкальный жанр</label>
+                <select name="music_taste" id="music_taste">
+                    <optgroup label="Музыкальный жанр">
+                        <option value="Indie">Indie</option>
+                        <option value="Reggie">Reggie</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Alternative">Alternative</option>
+                    </optgroup>
+
+                    <optgroup label="Не определился">
+                        <option value="other">Другой жанр</option>
+                        <option value="meloman">Я меломан #1</option>
+                        <option value="meloman">Я меломан #2</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <h4>Любите ли вы животных ?</h4>
+                <label>
+                    <span>Да!</span>
+                    <input type="radio" name="animals" value="yes" checked>
+                </label>
+
+                <label>
+                    <span>Нет!</span>
+                    <input type="radio" name="animals" value="no">
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Условия</legend>
+            <div>
+                <label for="agreement">Согласны ли вы с пользовательским соглашением?</label>
+                <input type="checkbox" id="agreement" required>
+            </div>
+
+            <div>
+                <button type="submit">Зарегистрироваться</button>
+                <button type="reset">Очистить форму</button>
+            </div>
+
+        </fieldset>
+
+    </form>
+
+</main>
+
+
+</body>
+</html>

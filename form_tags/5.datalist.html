@@ -1,0 +1,26 @@
+<!-- Datalist -->
+
+<!--
+   <datalist> - содержит набор опций (<option>), доступных для выбора. Выбранное значение будет
+    установлено для элемента <input>, с атрибутом list.
+
+    Не стоит использовать его вместо тега <select>, но можно использовать как вспомогательный
+    тег для <input>. Причина в том что его сложнее обрабатывать через JavaScript.
+ -->
+
+
+<form action="">
+
+    <label for="ice-cream-choice">Choose a flavor:</label>
+
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+
+</form>

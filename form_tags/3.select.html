@@ -1,0 +1,87 @@
+<!-- Select -->
+
+<!--
+ <select> - элемент содержащий меню опций <option> или меню групп опций <optgroup>.
+
+ Имеет схожие с <input> атрибуты, а также атрибуты multiple и size.
+
+ Обычно select располагается внутри тега <form> или связывается с ним атрибутом form.
+-->
+
+<form action="">
+    <select name="some_list"></select>
+</form>
+
+<hr>
+<!--
+    <option> - тег, который используется для определения пункта списка внутри тега <select>,
+    но также его можно встретить и в тегах.
+    Атрибуты:
+    selected - позволяет предвыбрать элемент.
+    disabled - работает как всегда.
+    и другие.
+-->
+
+<form action="">
+    <label for="select">Select item</label>
+    <select name="list" id="select">
+        <option value="item-1">Item #1</option>
+        <option value="item-2">Item #2</option>
+        <option value="item-3">Item #3</option>
+        <option value="item-4">Item #4</option>
+    </select>
+</form>
+
+<hr>
+
+<!--
+    <optgroup> - позволяет группировать опции внутри <select>.
+    Имеет атрибуты - name и disabled.
+    name - задает имя группы.
+    disabled - исключает возможность выбора элементов из группы.
+    label - Задает имя группы которое видно пользователю.
+-->
+
+<form action="">
+    <label for="select2">Select item</label>
+
+    <select name="list" id="select2">
+
+        <optgroup label="Veggie">
+            <option value="item-1" selected>Mushrooms</option>
+            <option value="item-2">Carrot</option>
+        </optgroup>
+
+        <optgroup label="Meat" disabled>
+            <option value="item-3">Pork</option>
+            <option value="item-4">Chicken</option>
+        </optgroup>
+
+    </select>
+</form>
+
+<hr>
+
+
+<!--
+    Атрибут multiple тега <select> позволяет выбирать не один, а сразу несколько <option>
+    если зажата клавиша CTRL (для windows или linux) или COMMAND (для macOS)
+-->
+
+<form action="">
+    <label for="select3">Select item</label>
+
+    <select name="list" id="select3" multiple>
+
+        <optgroup label="Veggie">
+            <option value="item-1" selected>Mushrooms</option>
+            <option value="item-2">Carrot</option>
+        </optgroup>
+
+        <optgroup label="Meat" disabled>
+            <option value="item-3">Pork</option>
+            <option value="item-4">Chicken</option>
+        </optgroup>
+
+    </select>
+</form>

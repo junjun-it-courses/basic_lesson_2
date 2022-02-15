@@ -1,0 +1,42 @@
+<!-- Textarea -->
+
+<!--
+    <textarea> - позволяет добавить поле для ввода большого количества текста, обычно
+    располагается внутри тега <form>.
+
+    Имеет атрибуты схожие с <input>, а также cols и rows.
+
+    cols - определяет ширину <textarea>.
+    rows - определяет высоту <textarea>.
+-->
+
+<form action="">
+    <label for="message">Your massage</label>
+    <textarea
+            name="user_message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your message..."
+    ></textarea>
+</form>
+
+<hr>
+
+<!--
+    У тега <textarea> нет атрибута value, а если вы ходите установить ему какое-то значение
+    по-умолчанию, нужно писать его между открывающим и закрывающим тегами.
+-->
+
+<form action="">
+    <label for="message2">Your massage</label>
+    <textarea
+            name="user_message"
+            id="message2"
+            cols="30"
+            rows="10"
+            placeholder="Your message..."
+    >Some predefined data goes here</textarea>
+</form>
+
+<hr>

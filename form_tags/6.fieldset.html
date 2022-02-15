@@ -1,0 +1,112 @@
+<!-- Fieldset -->
+
+<!--
+ <fieldset> - существует для группировки <input> внутри тега <form>, а также помогает
+ удобно управлять группой полей.
+-->
+
+<form action="#">
+    <h3>Registration form</h3>
+    <fieldset>
+        <div>
+            <label for="name_input">First name:</label>
+            <input id="name_input" type="text" placeholder="Email">
+        </div>
+
+        <div>
+            <label for="surname_input">Surname:</label>
+            <input id="surname_input" type="text" placeholder="Surname">
+        </div>
+    </fieldset>
+    <br>
+    <fieldset disabled>
+        <div>
+            <label for="email_input">Email:</label>
+            <input id="email_input" type="text" placeholder="Email">
+        </div>
+
+        <div>
+            <label for="password_input">Password:</label>
+            <input id="password_input" type="text" placeholder="Password">
+        </div>
+    </fieldset>
+
+
+</form>
+
+<hr>
+
+<!--
+    У <fieldset> также есть несколько атрибутов, которые помогают управлять сразу
+    всей группой <input>.
+
+     name - задает общее имя для группы
+     disabled - делает группу недоступной для редактирования
+     form - если <fieldset> лежит вне тега <form> то этот атрибут позволит вам связать
+     их.
+-->
+
+<form action="" id="example_form">
+    <h3>Example form</h3>
+
+    <label>
+        <input type="text" placeholder="Some example input">
+    </label>
+
+</form>
+
+<fieldset form="example_form">
+    <div>
+        <label for="name_2_input">First name:</label>
+        <input id="name_2_input" type="text" placeholder="Email">
+    </div>
+
+    <div>
+        <label for="surname_2_input">Surname:</label>
+        <input id="surname_2_input" type="text" placeholder="Surname">
+    </div>
+</fieldset>
+
+
+
+<!-- Legend -->
+
+<!--
+    <legend> - Является заголовком для группы элементов, сгруппированных через <fieldset>
+-->
+
+<hr>
+
+<form action="">
+    <h3>Another Example Form</h3>
+
+    <fieldset>
+        <legend>User info</legend>
+
+        <div>
+            <label for="name_3_input">First name:</label>
+            <input id="name_3_input" type="text" placeholder="Email">
+        </div>
+
+        <div>
+            <label for="surname_3_input">Surname:</label>
+            <input id="surname_3_input" type="text" placeholder="Surname">
+        </div>
+    </fieldset>
+
+    <br>
+
+    <fieldset disabled>
+        <legend>User credentials</legend>
+
+        <div>
+            <label for="email_3_input">Email:</label>
+            <input id="email_3_input" type="text" placeholder="Email">
+        </div>
+
+        <div>
+            <label for="password_3_input">Password:</label>
+            <input id="password_3_input" type="text" placeholder="Password">
+        </div>
+    </fieldset>
+</form>
